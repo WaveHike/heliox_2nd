@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Project-local launcher. No shell profile changes or fixed workspace path.
+set -euo pipefail
+audio_norm_dir="$(CDPATH= cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+exec "${AUDIO_NORM_PYTHON:-python3}" -B "$audio_norm_dir/audio_normalizer.py" "$@"

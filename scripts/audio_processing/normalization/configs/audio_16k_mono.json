@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "target_sample_rate": 16000,
+  "target_channels": 1,
+  "bit_depth": 16,
+  "normalize": "none"
+}
